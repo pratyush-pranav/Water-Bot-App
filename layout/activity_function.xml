@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BEE7E4"
+    tools:context=".FunctionActivity">
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        android:layout_centerInParent="true"
+        android:background="@drawable/stop" />
+
+    <Button
+        android:id="@+id/btnUp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/btnStop"
+
+        android:layout_centerInParent="true"
+        android:background="@drawable/up" />
+
+    <Button
+        android:id="@+id/btnDown"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btnStop"
+        android:layout_centerInParent="true"
+        android:background="@drawable/down" />
+
+    <Button
+        android:id="@+id/btnRight"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@+id/btnStop"
+        android:layout_toRightOf="@+id/btnStop"
+        android:background="@drawable/right" />
+
+    <Button
+        android:id="@+id/btnLeft"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_toStartOf="@+id/btnStop"
+        android:layout_toLeftOf="@+id/btnStop"
+        android:background="@drawable/left" />
+
+    <Button
+        android:id="@+id/btnBluetooth"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/bluetooth" />
+
+    <ListView
+        android:id="@+id/listNewDevices"
+        android:layout_width="306dp"
+        android:layout_height="144dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toRightOf="@+id/btnBluetooth"
+        android:divider="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="126dp"
+        android:text="Connection Status"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textIsSelectable="false"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnDispense"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="85dp"
+        android:background="@drawable/waterdispense" />
+
+</RelativeLayout>
